@@ -1,0 +1,45 @@
+
+#botaohome{
+    width: 5%;
+    margin-left: 5%;
+    margin-right: 10px;
+}
+
+h2{   
+    display: inline-block;
+    vertical-align: 100%;
+    color: forestgreen;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
+.bloco{
+    background-color: limegreen;
+    border-block-start: 5px solid;
+}
+
+.pagSumario{
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: left;
+    font-size: 22px;
+    padding-right: 180px;
+}
+.sumario{
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    vertical-align: top;
+}
+li strong{
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#logoFinal{
+    width: 40px;
+    padding-right: 25px;
+    /* margin-left: 10%; */
+
+}
