@@ -1,5 +1,6 @@
 
 h1{
+    font-size: 36px;
     text-align: center;
     /* background: darkgreen; */
     color: forestgreen;
@@ -19,13 +20,15 @@ h1{
     margin-right: 10px;
 }
 
-
 h2{   
     display: inline-block;
-    vertical-align: 100%;
+    vertical-align: 60%;
     color: forestgreen;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
+    font-size: 28px;
+    font-weight: bold;
+    padding-bottom: 50px;
 }
 
 #banner{
@@ -42,10 +45,12 @@ h2{
 p{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    margin-block: 40px;
+    font-size: 18px;
 }
 
 #titulo{
-    font-size: 20px;
+    font-size: 22px;
 }
 
 strong{
@@ -56,6 +61,7 @@ strong{
 .bloco{
     background-color: limegreen;
     border-block-start: 5px solid;
+    padding: 25px;
 }
 
 ul{
@@ -68,20 +74,29 @@ ul{
     font-weight: bold;
     text-align: left;
     font-size: 22px;
-    padding-right: 180px;
+    padding-right: 300px;
+    padding-block-end: 25px;
 }
 .sumario{
     color: #FFFFFF;
     font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    vertical-align: top;
 }
 li strong{
     color: #FFFFFF;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+li a{
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 #logoFinal{
     width: 40px;
     padding-right: 25px;
     /* margin-left: 10%; */
-
+    padding-bottom: 40px;
 }
