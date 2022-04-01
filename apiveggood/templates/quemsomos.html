@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>  
+        <meta charset="UTF-8">
+        <title>Veggood | Quem somos</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='reset.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+
+    <body>
+        <header style="padding-top: 10px;">
+            
+            <a href="{{ url_for('homepage') }}"><img id="botaohome" src="{{url_for('static', filename='/fotos/botao-home-png-5.png')}}">
+            <h2>| Veggood</h2></a> 
+        </header>
+        
+        <div>
+            <img id="banner" src="{{url_for('static', filename='/fotos/Banner_Burgers.jpg')}}">
+            <h1>Sobre nós</h1>    
+            <p> O nosso app é destinado a pessoas Veganas, vegetarianas & interessadas, 
+                que tenham dificuldades em encontrar estabelecimentos de comidas veganas.
+            </p>
+
+            <p id="titulo"> O <strong>Veggood</strong> é um app exclusivamente de restaurantes vegetarianos e veganos 
+                que facilita em encontrar opções de restaurantes.
+            </p>
+
+            <p>Diferentemente do Ifood, o nosso produto tem 
+            <em><strong> preços mais acessíveis para a comunidade veggie e tem maior variedade de produtos vegetais</strong></em></em></em></p>
+        
+            <p> .</p>
+            <p> .</p>
+            <p> .</p>
+            <p> .</p>
+        </div>
+
+        <div class="bloco">
+            <ul class="sumario">
+                <p class="pagSumario">Veggood</p>
+                <li><strong><a href="{{ url_for('homepage') }}">Home</a></strong></li>
+                <li><strong>Contato</strong></li>
+                <li><strong>Política de privacidade</strong></li>
+                <li><strong><a href="{{ url_for('quemsomos') }}">Quem somos</a></strong></li>
+            </ul>
+            <ul>
+                <p class="pagSumario">Social</p>
+                
+                <img id="logoFinal" src="{{url_for('static', filename='/fotos/facebook_logo.png')}}">
+                <img id="logoFinal" src="{{url_for('static', filename='/fotos/insta_logo.png')}}">
+                <img id="logoFinal" src="{{url_for('static', filename='/fotos/twitter_logo.png')}}">
+            </ul>
+            
+            <!-- <img id="logoFinal" src="fotos/Veggood_Logo.png"> -->
+        </div>
+
+        <div class="bloco">
+            <ul>
+                <p class="pagSumario">Formas de pagamento</p>
+                <img id="logoFinal" src="{{url_for('static', filename='/fotos/mastercard.png')}}">
+                <img id="logoFinal" src="{{url_for('static', filename='/fotos/alelo-logo.png')}}">
+                <img id="logoFinal" src="{{url_for('static', filename='/fotos/visa_logo.png')}}">
+                <img id="logoFinal" src="{{url_for('static', filename='/fotos/ticket-logo.png')}}">
+                
+            </ul>
+        </div>
+    
+    </body>
+
+</html>
+    

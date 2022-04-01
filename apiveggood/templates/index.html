@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Veggood | Home</title>
+        
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='reset.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
+    </head>
+
+
+    <body>
+        <header style="padding-top: 40px;">    
+            <a href="{{ url_for('homepage') }}"><img id="botaohome" src="{{url_for('static', filename='fotos/botao-home-png-5.png')}}">
+            <h2 class="home">| Veggood</h2></a>
+
+            <div class="caixa">
+                <nav>
+                    <ul>
+                        <li>Marmitas</li>
+                        <li>Lanches</li>
+                        <li>Bebidas</li>
+                        <li>Condimentos</li>
+                    </ul>
+                </nav> 
+            </div>
+                
+        </header>
+        
+        <main>
+            <ul style="display: inline-flex;">
+                <li class="bordaItem">
+                    <img class="menu" src="{{url_for('static', filename='/comidas/polenta-frita-para-espetinhos.jpg')}}">
+                    <h2 class="tituloComida">Polenta Frita</h2>
+                    <p></p>
+                    <p class="preco">11,99</p>
+                </li>
+                
+                <li class="bordaItem">
+                    <img class="menu" src="{{url_for('static', filename='/comidas/brownie.jpg')}}"
+>
+                    <h2 class="tituloComida">Brownie Vegano</h2>
+                    <p></p>
+                    <p class="preco">9,90</p>
+                </li>
+                
+                <li class="bordaItem">
+                    <img class="menu" src="{{url_for('static', filename='/comidas/hamburguer.jpg')}}">
+                    <h2 class="tituloComida">Hamburguer</h2>
+                    <p></p>
+                    <p class="preco">25,90</p>
+                </li> 
+            </ul>
+            
+        </main>
+
+        <div class="bloco">
+            <ul class="sumario">
+                <p class="pagSumario">Veggood</p>
+                <li><strong><a href="{{ url_for('homepage') }}">Home</a></strong></li>
+                <li><strong>Contato</strong></li>
+                <li><strong>Política de privacidade</strong></li>
+                <li><strong><a href="{{ url_for('quemsomos') }}">Quem somos</a></strong></li>
+            </ul>
+            <ul class="sumario">
+                <p class="pagSumario">Social</p>
+                
+                <img id="logoFinal" src="{{url_for('static', filename='/fotos/facebook_logo.png')}}">
+                <img id="logoFinal" src="{{url_for('static', filename='/fotos/insta_logo.png')}}">
+                <img id="logoFinal" src="{{url_for('static', filename='/fotos/twitter_logo.png')}}">
+            </ul>
+            
+            <!-- <img id="logoFinal" src="fotos/Veggood_Logo.png"> -->
+        </div>
+
+        <div class="bloco">
+            <ul>
+                <p class="pagSumario">Formas de pagamento</p>
+                <img id="logoFinal" src="{{url_for('static', filename='/fotos/mastercard.png')}}">
+                <img id="logoFinal" src="{{url_for('static', filename='/fotos/alelo-logo.png')}}">
+                <img id="logoFinal" src="{{url_for('static', filename='/fotos/visa_logo.png')}}">
+                <img id="logoFinal" src="{{url_for('static', filename='/fotos/ticket-logo.png')}}">
+                
+            </ul>
+        </div>
+    </body>
+</html>
