@@ -49,7 +49,8 @@ header{
 .bordaItem li{
     display: inline-block;
     position: relative;
-    /* width: 150px; */
+    width: 255px;
+    height: 350px;
     margin: 45px 1.5%;
     border: inset;
     padding: 20px;
@@ -60,7 +61,7 @@ header{
 
 .bordaItem-descricao{
     box-sizing: border-box;
-    margin-block-end: 30px;
+    height: 95px;
 }
 
 .menu{
