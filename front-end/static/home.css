@@ -57,6 +57,11 @@ header{
     box-sizing: border-box;
     max-inline-size: 285px;
     vertical-align: top;
+    border-radius: 20px;
+}
+
+.bordaItem li:hover{
+    border: 2px solid;
 }
 
 .bordaItem-descricao{
@@ -78,14 +83,19 @@ nav li{
     border-style:outset;
 }
 
-.bloco{
+.sumario a:hover{
+    text-decoration: underline;
+    font-size: larger;
+}
+
+/* .bloco{
     background-color: limegreen;
     border-block-start: 5px solid;
     padding: 30px;
-}
+} */
 
 .pagSumario{
-    color: #FFFFFF;
+    color: forestgreen;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-align: left;
@@ -94,7 +104,7 @@ nav li{
     padding-block-end: 25px;
 }
 .sumario{
-    color: #FFFFFF;
+    color: yellowgreen;
     font-family: Arial, Helvetica, sans-serif;
     display: inline-block;
     vertical-align: top;
@@ -104,13 +114,11 @@ nav li{
     padding-block: 6px;
 }
 
-li strong{
-    color: #FFFFFF;
-    font-family: Arial, Helvetica, sans-serif;
+strong{
     font-weight: bold;
 }
 li a{
-    color: #FFFFFF;
+    color: yellowgreen;
     text-decoration: none;
 }
 
@@ -119,4 +127,22 @@ li a{
     padding-right: 25px;
     /* margin-left: 10%; */
     padding-bottom: 40px;
+}
+
+footer{
+    background: url("../static/fotos/Design\ sem\ nome.jpg");
+    border-block-start: 5px solid;
+    padding: 30px;
+}
+
+footer div{
+    margin-block-end: 20px;
+}
+
+#copyright{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: forestgreen;
+    font-weight: 600;
+
 }
