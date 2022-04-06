@@ -12,7 +12,7 @@ header{
 .caixa{
     position: relative;
     width: 940px;
-    margin: 0 auto;
+    margin: 0 20% auto;
 }
 
 .home{   
@@ -41,8 +41,8 @@ header{
 }
 
 .bordaItem{
-    width: 940px;
-    margin: 0 auto;
+    width: 850px;
+    margin: 0 20% auto;
     padding: 50px 0;
 }
 
@@ -80,7 +80,7 @@ nav li{
     font-size: 20px;
     padding-inline: 60px;
     font-family: sans-serif;
-    border-style:outset;
+    border-inline-end: 2px solid;
 }
 
 .sumario a:hover{
@@ -125,8 +125,8 @@ li a{
 #logoFinal{
     width: 40px;
     padding-right: 25px;
-    /* margin-left: 10%; */
     padding-bottom: 40px;
+    vertical-align: middle;
 }
 
 footer{
