@@ -4,67 +4,68 @@
     <head>  
         <meta charset="UTF-8">
         <title>Veggood | Quem somos</title>
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='reset.css') }}">
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+        <link rel="stylesheet" href="../static/reset.css">
+        <link rel="stylesheet" href="../static/style.css">
     </head>
 
     <body>
-        <header style="padding-top: 10px;">
-            
-            <a href="{{ url_for('homepage') }}"><img id="botaohome" src="{{url_for('static', filename='/fotos/botao-home-png-5.png')}}">
-            <h2>| Veggood</h2></a> 
+        <header style="padding-top: 40px;">    
+            <a href="{{ url_for('homepage') }}"><img id="botaohome" src="../static/fotos/botao-home-png.png">
+            <h2 class="home">| Veggood</h2></a>
         </header>
-        
         <div>
-            <img id="banner" src="{{url_for('static', filename='/fotos/Banner_Burgers.jpg')}}">
+            <img id="banner" src="../static/fotos/banner.jpg">
             <h1>Sobre nós</h1>    
-            <p> O nosso app é destinado a pessoas Veganas, vegetarianas & interessadas, 
-                que tenham dificuldades em encontrar estabelecimentos de comidas veganas.
-            </p>
+            <div class="paragrafo">
+                <p> O nosso app é destinado a pessoas Veganas, vegetarianas & interessadas, 
+                    que tenham dificuldades em encontrar estabelecimentos de comidas veganas.
+                </p>
 
-            <p id="titulo"> O <strong>Veggood</strong> é um app exclusivamente de restaurantes vegetarianos e veganos 
-                que facilita em encontrar opções de restaurantes.
-            </p>
+                <p id="titulo"> O <strong>Veggood</strong> é um app exclusivamente de restaurantes vegetarianos e veganos 
+                    que facilita em encontrar opções de restaurantes.
+                </p>
 
-            <p>Diferentemente do Ifood, o nosso produto tem 
-            <em><strong> preços mais acessíveis para a comunidade veggie e tem maior variedade de produtos vegetais</strong></em></em></em></p>
-        
-            <p> .</p>
-            <p> .</p>
-            <p> .</p>
-            <p> .</p>
-        </div>
-
-        <div class="bloco">
-            <ul class="sumario">
-                <p class="pagSumario">Veggood</p>
-                <li><strong><a href="{{ url_for('homepage') }}">Home</a></strong></li>
-                <li><strong>Contato</strong></li>
-                <li><strong>Política de privacidade</strong></li>
-                <li><strong><a href="{{ url_for('quemsomos') }}">Quem somos</a></strong></li>
-            </ul>
-            <ul>
-                <p class="pagSumario">Social</p>
-                
-                <img id="logoFinal" src="{{url_for('static', filename='/fotos/facebook_logo.png')}}">
-                <img id="logoFinal" src="{{url_for('static', filename='/fotos/insta_logo.png')}}">
-                <img id="logoFinal" src="{{url_for('static', filename='/fotos/twitter_logo.png')}}">
-            </ul>
+                <p>Diferentemente do Ifood, o nosso produto tem 
+                <em><strong> preços mais acessíveis para a comunidade veggie e tem maior variedade de produtos vegetais</strong></em></em></em></p>
             
-            <!-- <img id="logoFinal" src="fotos/Veggood_Logo.png"> -->
+                <p> .</p>
+                <p> .</p>
+                <p> .</p>
+                <p> .</p>
+            </div>
         </div>
+        <footer>
+            <div>
+                <ul class="sumario">
+                    <p class="pagSumario">Veggood</p>
+                    <li><strong><a href="{{ url_for('homepage') }}">Home</a></strong></li>
+                    <li><strong>Contato</strong></li>
+                    <li><strong>Política de privacidade</strong></li>
+                    <li><strong><a href="{{ url_for('quemsomos') }}">Quem somos</a></strong></li>
+                </ul>
+                <ul class="sumario">
+                    <p class="pagSumario">Social</p>
+                    
+                    <a href="https://www.facebook.com/somoseSales/"><img id="logoFinal" src="../static/fotos/facebook_logo.png"></a>
+                    <a href="https://www.instagram.com/somosesales/"><img id="logoFinal" src="../static/fotos/insta_logo.png"></a>
+                    <img id="logoFinal" src="../static/fotos/twitter_logo.png">
+                    <a href="https://www.linkedin.com/company/somosesales/mycompany/"><img id="logoFinal" src="../static/fotos/linkedin.png"></a>
+                </ul>
 
-        <div class="bloco">
-            <ul>
-                <p class="pagSumario">Formas de pagamento</p>
-                <img id="logoFinal" src="{{url_for('static', filename='/fotos/mastercard.png')}}">
-                <img id="logoFinal" src="{{url_for('static', filename='/fotos/alelo-logo.png')}}">
-                <img id="logoFinal" src="{{url_for('static', filename='/fotos/visa_logo.png')}}">
-                <img id="logoFinal" src="{{url_for('static', filename='/fotos/ticket-logo.png')}}">
-                
-            </ul>
-        </div>
-    
+            </div>
+
+            <div>
+                <ul>
+                    <p class="pagSumario">Formas de pagamento</p>
+                    <img id="logoFinal" src="../static/fotos/mastercard.png">
+                    <img id="logoFinal" src="../static/fotos/alelo-logo.png">
+                    <img id="logoFinal" src="../static/fotos/visa_logo.png">
+                    <img id="logoFinal" src="../static/fotos/ticket-logo.png">
+                    
+                </ul>
+            </div>
+            <p id="copyright">&copy Copyright eSales 2022</p>
+        </footer>
     </body>
 
 </html>

@@ -5,14 +5,14 @@
         <meta charset="UTF-8">
         <title>Veggood | Home</title>
         
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='reset.css') }}">
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
+        <link rel="stylesheet" href="../static/reset.css">
+        <link rel="stylesheet" href="../static/home.css">
     </head>
 
 
     <body>
         <header style="padding-top: 40px;">    
-            <a href="{{ url_for('homepage') }}"><img id="botaohome" src="{{url_for('static', filename='fotos/botao-home-png-5.png')}}">
+            <a href="{{ url_for('homepage') }}"><img id="botaohome" src="../static/fotos/botao-home-png.png">
             <h2 class="home">| Veggood</h2></a>
 
             <div class="caixa">
@@ -29,60 +29,62 @@
         </header>
         
         <main>
-            <ul style="display: inline-flex;">
-                <li class="bordaItem">
-                    <img class="menu" src="{{url_for('static', filename='/comidas/polenta-frita-para-espetinhos.jpg')}}">
+            <ul class="bordaItem">
+                <li>
+                    <img class="menu" src= "../static/comidas/polenta-frita-para-espetinhos.jpg">
                     <h2 class="tituloComida">Polenta Frita</h2>
-                    <p></p>
+                    <p class="bordaItem-descricao">6 unidades</p>
                     <p class="preco">11,99</p>
                 </li>
-                
-                <li class="bordaItem">
-                    <img class="menu" src="{{url_for('static', filename='/comidas/brownie.jpg')}}"
->
+                <li>
+                    <img class="menu" src="../static/comidas/brownie.jpg">
                     <h2 class="tituloComida">Brownie Vegano</h2>
-                    <p></p>
+                    <p class="bordaItem-descricao">Chocolate ao leite com gotas de cacau</p>
                     <p class="preco">9,90</p>
                 </li>
-                
-                <li class="bordaItem">
-                    <img class="menu" src="{{url_for('static', filename='/comidas/hamburguer.jpg')}}">
+
+                <li>
+                    <img class="menu" src="../static/comidas/hamburguer.jpg">
                     <h2 class="tituloComida">Hamburguer</h2>
-                    <p></p>
+                    <p class="bordaItem-descricao">Pão de hamburguer, queijo vegano, 
+                        hamburguer de lentilha e soja, cebola caramelizada e presunto vegano</p>
                     <p class="preco">25,90</p>
                 </li> 
             </ul>
             
         </main>
+        
+        <footer>
+            <div>
+                <ul class="sumario">
+                    <p class="pagSumario">Veggood</p>
+                    <li><strong><a href="{{ url_for('homepage') }}">Home</a></strong></li>
+                    <li><strong>Contato</strong></li>
+                    <li><strong>Política de privacidade</strong></li>
+                    <li><strong><a href="{{ url_for('quemsomos') }}">Quem somos</a></strong></li>
+                </ul>
+                <ul class="sumario">
+                    <p class="pagSumario">Social</p>
+                    
+                    <a href="https://www.facebook.com/somoseSales/"><img id="logoFinal" src="../static/fotos/facebook_logo.png"></a>
+                    <a href="https://www.instagram.com/somosesales/"><img id="logoFinal" src="../static/fotos/insta_logo.png"></a>
+                    <img id="logoFinal" src="../static/fotos/twitter_logo.png">
+                    <a href="https://www.linkedin.com/company/somosesales/mycompany/"><img id="logoFinal" src="../static/fotos/linkedin.png"></a>
+                </ul>
 
-        <div class="bloco">
-            <ul class="sumario">
-                <p class="pagSumario">Veggood</p>
-                <li><strong><a href="{{ url_for('homepage') }}">Home</a></strong></li>
-                <li><strong>Contato</strong></li>
-                <li><strong>Política de privacidade</strong></li>
-                <li><strong><a href="{{ url_for('quemsomos') }}">Quem somos</a></strong></li>
-            </ul>
-            <ul class="sumario">
-                <p class="pagSumario">Social</p>
-                
-                <img id="logoFinal" src="{{url_for('static', filename='/fotos/facebook_logo.png')}}">
-                <img id="logoFinal" src="{{url_for('static', filename='/fotos/insta_logo.png')}}">
-                <img id="logoFinal" src="{{url_for('static', filename='/fotos/twitter_logo.png')}}">
-            </ul>
-            
-            <!-- <img id="logoFinal" src="fotos/Veggood_Logo.png"> -->
-        </div>
+            </div>
 
-        <div class="bloco">
-            <ul>
-                <p class="pagSumario">Formas de pagamento</p>
-                <img id="logoFinal" src="{{url_for('static', filename='/fotos/mastercard.png')}}">
-                <img id="logoFinal" src="{{url_for('static', filename='/fotos/alelo-logo.png')}}">
-                <img id="logoFinal" src="{{url_for('static', filename='/fotos/visa_logo.png')}}">
-                <img id="logoFinal" src="{{url_for('static', filename='/fotos/ticket-logo.png')}}">
-                
-            </ul>
-        </div>
+            <div>
+                <ul>
+                    <p class="pagSumario">Formas de pagamento</p>
+                    <img id="logoFinal" src="../static/fotos/mastercard.png">
+                    <img id="logoFinal" src="../static/fotos/alelo-logo.png">
+                    <img id="logoFinal" src="../static/fotos/visa_logo.png">
+                    <img id="logoFinal" src="../static/fotos/ticket-logo.png">
+                    
+                </ul>
+            </div>
+            <p id="copyright">&copy Copyright eSales 2022</p>
+        </footer>
     </body>
 </html>

@@ -7,6 +7,10 @@ h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+header{
+    padding-bottom: 50px;
+}
+
 #logo{
     /* height: 120px; */
     width: 10%;
@@ -15,7 +19,7 @@ h1{
 }
 
 #botaohome{
-    width: 5%;
+    width: 50px;
     margin-left: 5%;
     margin-right: 10px;
 }
@@ -32,17 +36,14 @@ h2{
 }
 
 #banner{
-    height: 300px;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    height: 95%;
+    width: 75%;
+    margin: 0 15% auto;
     padding-top: 3%;
     padding-bottom: 5%;
-    /* align-content: center; */
-    /* border: 10px ; */
 }
 
-p{
+.paragrafo{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     margin-block: 40px;
@@ -53,9 +54,14 @@ p{
     font-size: 22px;
 }
 
-strong{
+.paragrafo strong{
     color: forestgreen;
-    
+    font-weight: bold;
+    font-style: italic;
+}
+
+.paragrafo p{
+    margin-block-end: 20px;
 }
 
 .bloco{
@@ -64,12 +70,16 @@ strong{
     padding: 25px;
 }
 
-ul{
-    display: inline-block;
-    vertical-align: top;
+.sumario a:hover{
+    text-decoration: underline;
+    font-size: larger;
+}
+
+strong{
+    font-weight: bold;
 }
 .pagSumario{
-    color: #FFFFFF;
+    color: forestgreen;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-align: left;
@@ -78,25 +88,43 @@ ul{
     padding-block-end: 25px;
 }
 .sumario{
-    color: #FFFFFF;
+    color: yellowgreen;
     font-family: Arial, Helvetica, sans-serif;
     display: inline-block;
     vertical-align: top;
 }
-li strong{
-    color: #FFFFFF;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+
+.sumario li{
+    padding-block: 6px;
 }
 
 li a{
-    color: #FFFFFF;
+    color: yellowgreen;
     text-decoration: none;
 }
 
 #logoFinal{
     width: 40px;
     padding-right: 25px;
-    /* margin-left: 10%; */
+    vertical-align: middle;
     padding-bottom: 40px;
+}
+
+
+footer{
+    background: url("../static/fotos/rodape.jpg");
+    border-block-start: 5px solid;
+    padding: 30px;
+}
+
+footer div{
+    margin-block-end: 20px;
+}
+
+#copyright{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: forestgreen;
+    font-weight: 600;
+
 }
