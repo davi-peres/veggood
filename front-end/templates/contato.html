@@ -1,65 +1,58 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <title>Veggood | Home</title>
-        
+        <title>Veggood | Contato</title>
+    
         <link rel="stylesheet" href="../static/reset.css">
-        <link rel="stylesheet" href="../static/home.css">
+        <link rel="stylesheet" href="../static/contato.css">
     </head>
-
 
     <body>
         <header style="padding-top: 40px;">    
             <a href="index.html"><img id="botaohome" src="../static/fotos/botao-home-png.png">
             <h2 class="home">| Veggood</h2></a>
-
-            <div class="caixa">
-                <nav>
-                    <ul>
-                        <li>Marmitas</li>
-                        <li>Lanches</li>
-                        <li>Bebidas</li>
-                        <li>Condimentos</li>
-                    </ul>
-                </nav> 
-            </div>
-                
         </header>
-        
-        <main>
-            <ul class="bordaItem">
-                <li>
-                    <img class="menu" src= "../static/comidas/polenta-frita-para-espetinhos.jpg">
-                    <h2 class="tituloComida">Polenta Frita</h2>
-                    <p class="bordaItem-descricao">6 unidades</p>
-                    <p class="preco">11,99</p>
-                </li>
-                <li>
-                    <img class="menu" src="../static/comidas/brownie.jpg">
-                    <h2 class="tituloComida">Brownie Vegano</h2>
-                    <p class="bordaItem-descricao">Chocolate ao leite com gotas de cacau</p>
-                    <p class="preco">9,90</p>
-                </li>
 
-                <li>
-                    <img class="menu" src="../static/comidas/hamburguer.jpg">
-                    <h2 class="tituloComida">Hamburguer</h2>
-                    <p class="bordaItem-descricao">Pão de hamburguer, queijo vegano, 
-                        hamburguer de lentilha e soja, cebola caramelizada e presunto vegano</p>
-                    <p class="preco">25,90</p>
-                </li> 
-            </ul>
-            
+        <main>
+            <form>
+                <div>
+                    <label for="nomesobrenome">Nome e Sobrenome</label>
+                    <input type="text" id="nomesobrenome">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone">
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea cols="50" rows="10" id="mensagem"></textarea>
+                </div>
+                
+                <div>
+                    <p>Melhor forma de contato</p>
+                    <select>
+                        <option>E-mail</option>
+                        <option>Telefone</option>
+                        <option>WhatsApp</option>
+                    </select>
+                </div>
+
+                <label><input  class="checkbox" type="checkbox">Gostaria de receber as novidades por e-mail?</label>
+                
+                
+                <input id="botaoenviar" type="submit" value="Enviar formulário">
+
+            </form>
         </main>
-        
+
         <footer>
             <div>
                 <ul class="sumario">
                     <p class="pagSumario">Veggood</p>
                     <li><strong><a href="index.html">Home</a></strong></li>
-                    <li><strong><a href="contato.html">Contato</a></strong></li>
+                    <li><strong>Contato</strong></li>
                     <li><strong>Política de privacidade</strong></li>
                     <li><strong><a href="quemsomos.html">Quem somos</a></strong></li>
                 </ul>
