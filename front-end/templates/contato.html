@@ -18,28 +18,28 @@
             <form>
                 <div>
                     <label for="nomesobrenome">Nome e Sobrenome</label>
-                    <input type="text" id="nomesobrenome">
+                    <input type="text" id="nomesobrenome" required>
 
                     <label for="email">Email</label>
-                    <input type="email" id="email">
+                    <input type="email" id="email" required>
 
                     <label for="telefone">Telefone</label>
-                    <input type="tel" id="telefone">
+                    <input type="tel" id="telefone" required placeholder="(__) _____-____">
 
                     <label for="mensagem">Mensagem</label>
-                    <textarea cols="50" rows="10" id="mensagem"></textarea>
+                    <textarea cols="50" rows="10" id="mensagem" required></textarea>
                 </div>
                 
-                <div>
-                    <p>Melhor forma de contato</p>
+                <fieldset>
+                    <legend>Melhor forma de contato</legend>
                     <select>
                         <option>E-mail</option>
                         <option>Telefone</option>
                         <option>WhatsApp</option>
                     </select>
-                </div>
+                </fieldset>
 
-                <label><input  class="checkbox" type="checkbox">Gostaria de receber as novidades por e-mail?</label>
+                <label><input  class="checkbox" type="checkbox" checked>Gostaria de receber as novidades por e-mail?</label>
                 
                 
                 <input id="botaoenviar" type="submit" value="Enviar formulário">
