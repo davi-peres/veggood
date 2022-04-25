@@ -41,7 +41,7 @@ label, legend{
     margin: 10px 0;
 }
 
- div input, div textarea, select{
+div input, div textarea, select{
     border-radius: 8px;
     display: block;
     font-size: 16px;

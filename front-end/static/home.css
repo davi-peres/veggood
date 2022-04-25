@@ -26,10 +26,19 @@ header{
     padding-bottom: 50px;
 }
 
+select, label, input{
+    width: 170px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 7px;
+}
+
+
 .tituloComida{
     font-size: 18px;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 12px auto;
+    margin: 12px 0 30px;
+    max-height: 18px;
 }
 
 .preco{
@@ -40,17 +49,26 @@ header{
     text-align: left;
 }
 
+.barraDePesquisa form, .barraDePesquisa fieldset{
+    display: inline-block;
+    vertical-align: bottom;
+}
+
 .bordaItem{
-    width: 850px;
-    margin: 0 20% auto;
+    width: 1175px;
+    margin: 0 7% auto;
     padding: 50px 0;
+}
+
+.bordaItem fieldset, .bordaItem form{
+    max-width: 500px;
 }
 
 .bordaItem li{
     display: inline-block;
     position: relative;
     width: 255px;
-    height: 350px;
+    height: 370px;
     margin: 45px 1.5%;
     border: inset;
     padding: 20px;
@@ -70,6 +88,8 @@ header{
 .bordaItem-descricao{
     box-sizing: border-box;
     height: 95px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14.5px;
 }
 
 .menu{
@@ -86,6 +106,8 @@ nav li{
     border-inline-end: 2px solid;
     cursor: pointer;
 }
+
+
 
 .sumario a:hover{
     text-decoration: underline;
