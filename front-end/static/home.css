@@ -5,9 +5,6 @@
     margin-right: 10px;
 }
 
-header{
-    padding-bottom: 50px;
-}
 
 .caixa{
     position: relative;
@@ -19,18 +16,19 @@ header{
     display: inline-block;
     vertical-align: 60%;
     color: forestgreen;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
     font-style: italic;
     font-size: 28px;
     font-weight: bold;
     padding-bottom: 50px;
 }
 
-select, label, input{
-    width: 170px;
-    height: 30px;
-    font-size: 20px;
+select, input{
+    width: 280px;
+    height: 45px;
+    font-size: 16px;
     border-radius: 7px;
+    padding: 8px;
 }
 
 
@@ -49,7 +47,19 @@ select, label, input{
     text-align: left;
 }
 
-.barraDePesquisa form, .barraDePesquisa fieldset{
+.barraDePesquisa{
+    width: 1175px;
+    margin: 0 7% auto;
+    padding: 50px 0;
+
+}
+.barraDePesquisa form {
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0 580px 0 1.5%;
+}
+
+.barraDePesquisa fieldset {
     display: inline-block;
     vertical-align: bottom;
 }
@@ -58,10 +68,6 @@ select, label, input{
     width: 1175px;
     margin: 0 7% auto;
     padding: 50px 0;
-}
-
-.bordaItem fieldset, .bordaItem form{
-    max-width: 500px;
 }
 
 .bordaItem li{
