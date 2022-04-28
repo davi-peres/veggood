@@ -13,9 +13,10 @@
 }
 
 .home{   
+    margin: 20px 0 5px 35px;
     display: inline-block;
     vertical-align: 60%;
-    color: forestgreen;
+    color: #A0AA60;
     font-family: 'Merriweather Sans', sans-serif;
     font-style: italic;
     font-size: 28px;
@@ -40,11 +41,12 @@ select, input{
 }
 
 .preco{
-    font-size: 20px;
-    color: yellowgreen;
+    font-size: 18px;
+    color: #BFBF5E;
     font-weight: bold;
-    margin-block: 10px auto;    
+    margin-block: 18px auto;
     text-align: left;
+    font-family: arial;
 }
 
 .barraDePesquisa{
@@ -83,6 +85,7 @@ select, input{
     vertical-align: top;
     border-radius: 20px;
     transition: 1s all;
+    box-shadow: 15px 15px 15px #d56b1d;
 }
 
 .bordaItem li:hover{
@@ -96,6 +99,7 @@ select, input{
     height: 95px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14.5px;
+    line-height: 17px;
 }
 
 .menu{
@@ -115,11 +119,6 @@ nav li{
 
 
 
-.sumario a:hover{
-    text-decoration: underline;
-    font-size: larger;
-    transition: 0.3s all;
-}
 
 /* .bloco{
     background-color: limegreen;
@@ -128,7 +127,7 @@ nav li{
 } */
 
 .pagSumario{
-    color: forestgreen;
+    color: #58692E;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-align: left;
@@ -137,7 +136,7 @@ nav li{
     padding-block-end: 25px;
 }
 .sumario{
-    color: yellowgreen;
+    color: #A0AA60;
     font-family: Arial, Helvetica, sans-serif;
     display: inline-block;
     vertical-align: top;
@@ -148,11 +147,17 @@ nav li{
     transition: 1s all;
 }
 
+.sumario a:hover{
+    text-decoration: underline;
+    font-size: larger;
+    transition: 0.3s all;
+}
+
 strong{
     font-weight: bold;
 }
 li a{
-    color: yellowgreen;
+    color: #A0AA60;
     text-decoration: none;
 }
 
@@ -176,7 +181,7 @@ footer div{
 #copyright{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    color: forestgreen;
+    color: #6d8a0c;
     font-weight: 600;
 
 }
