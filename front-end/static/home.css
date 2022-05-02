@@ -13,13 +13,13 @@
 }
 
 .home{   
-    margin: 20px 0 5px 35px;
+    margin: 20px 0 5px 125px;
     display: inline-block;
     vertical-align: 60%;
     color: #A0AA60;
     font-family: 'Merriweather Sans', sans-serif;
     font-style: italic;
-    font-size: 28px;
+    font-size: 35px;
     font-weight: bold;
     padding-bottom: 50px;
 }
@@ -184,4 +184,16 @@ footer div{
     color: #6d8a0c;
     font-weight: 600;
 
+}
+
+@media screen and (max-width: 480px) {
+    .bordaItem, select, input{
+        width: auto;
+    }
+
+    .home, .bordaItem, select, input{
+        text-align: center;
+        margin: 0;
+        display: block;
+    }
 }
