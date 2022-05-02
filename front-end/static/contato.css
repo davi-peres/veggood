@@ -4,9 +4,6 @@
     margin-right: 10px;
 }
 
-header{
-    padding-bottom: 50px;
-}
 
 .caixa{
     position: relative;
@@ -15,12 +12,13 @@ header{
 }
 
 .home{   
+    margin: 20px 0 5px 125px;
     display: inline-block;
     vertical-align: 60%;
-    color: forestgreen;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #A0AA60;
+    font-family: 'Merriweather Sans', sans-serif;
     font-style: italic;
-    font-size: 28px;
+    font-size: 35px;
     font-weight: bold;
     padding-bottom: 50px;
 }
@@ -99,7 +97,7 @@ select{
 } */
 
 .pagSumario{
-    color: forestgreen;
+    color: #58692E;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-align: left;
@@ -108,7 +106,7 @@ select{
     padding-block-end: 25px;
 }
 .sumario{
-    color: #93C145;
+    color: #A0AA60;
     font-family: Arial, Helvetica, sans-serif;
     display: inline-block;
     vertical-align: top;
@@ -122,7 +120,7 @@ strong{
     font-weight: bold;
 }
 li a{
-    color: #93C145;
+    color: #A0AA60;
     text-decoration: none;
 }
 
@@ -149,7 +147,7 @@ footer div{
     padding-top: 5px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    color: forestgreen;
+    color: #58692E;
     font-weight: 600;
 
 }

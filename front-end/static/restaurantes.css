@@ -1,0 +1,123 @@
+.home{   
+    margin: 20px 0 5px 125px;
+    display: inline-block;
+    vertical-align: 60%;
+    color: #A0AA60;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-style: italic;
+    font-size: 35px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+#logo-restaurantes{
+    width: 1145px;
+    height: 365px;
+    margin: 10px 92px 20px 110px;
+}
+
+.titulo-restaurantes{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.titulo-restaurantes strong{
+    margin: 15px 718px 30px 110px;
+}
+
+.barraDePesquisa{
+    width: 1175px;
+    margin: 0 7% auto;
+    padding: 50px 0;
+
+}
+.barraDePesquisa form {
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0 580px 0 1.5%;
+}
+
+.barraDePesquisa fieldset {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+select, input{
+    width: 280px;
+    height: 45px;
+    font-size: 16px;
+    border-radius: 7px;
+    padding: 8px;
+}
+
+#icone-pesquisa{
+    position: absolute;
+    margin: 12px;
+}
+
+/* *********Rodapé do site********** */
+
+.pagSumario{
+    color: #58692E;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: left;
+    font-size: 22px;
+    padding-right: 300px;
+    padding-block-end: 25px;
+}
+.sumario{
+    color: #A0AA60;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.sumario li{
+    padding-block: 6px;
+    transition: 1s all;
+}
+
+.sumario a:hover{
+    text-decoration: underline;
+    font-size: larger;
+    transition: 0.3s all;
+}
+
+strong{
+    font-weight: bold;
+}
+li a{
+    color: #A0AA60;
+    text-decoration: none;
+}
+
+#logoFinal{
+    width: 40px;
+    padding-right: 25px;
+    padding-bottom: 40px;
+    vertical-align: middle;
+}
+
+footer{
+    background: url("../static/fotos/rodape.jpg");
+    border-block-start: 5px solid;
+    padding: 30px;
+}
+
+footer div{
+    margin-block-end: 20px;
+}
+
+#copyright{
+    border-top: 5px solid;
+    margin: 0 40% auto;
+    padding-top: 5px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #58692E;
+    font-weight: 600;
+
+}
