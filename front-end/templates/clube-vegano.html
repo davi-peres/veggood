@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="../static/restaurantes.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
     </head>
 
@@ -64,6 +65,44 @@
                     </h1>
                 </div>
             </section>
+
+            <section>
+                <ul class="bordaItem">
+                    <li>
+                        <img class="imagem-comida" src="../static/comidas/strogonoff-vegano.jpg">
+                        <h1 class="tituloComida">Strogonoff Vegano</h1>
+                        <p class="descricao-comida">Castanha de caju, grão de bico, cogumelos, cebola, alho, sal, azeite de oliva e arroz</p>
+                        <div class="barra-quantidade">
+                            <span class="subtrai-qtd">-</span>
+                            <span class="num">01</span>
+                            <span class="add-qtd">+</span>
+                            <script>
+                                const soma = document.querySelector(".add-qtd"),
+                                    subtrai = document.querySelector(".subtrai-qtd"),
+                                    num = document.querySelector(".num");
+            
+                                    let a = 1;
+                                    soma.addEventListener("click", () => {
+                                        a++;
+                                        a = (a < 10) ? "0" + a : a;
+                                        num.innerText = a;
+                                    })
+                                    
+                                    subtrai.addEventListener("click", () => {
+                                        if (a > 1) {
+                                            a -= 1;
+                                            a = (a < 10) ? "0" + a : a;
+                                            num.innerText = a;
+                                        }
+                                    })
+                                    
+                            </script>
+                        </div>
+                        <p class="preco-comida">R$ 25,90</p>
+                    </li>
+                </ul>
+            </section>
+            
         </main>
 
         <footer>
