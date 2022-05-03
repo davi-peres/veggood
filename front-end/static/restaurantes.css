@@ -69,6 +69,7 @@ select, input{
     border-radius: 16px;
     padding: 20px 20px 40px 20px;
     transition: 1s all;
+    margin-block-end: 50px;
 }
 
 .bordaItem li a{
