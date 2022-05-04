@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Veggood | Contato</title>
+    
+        <link rel="stylesheet" href="../static/reset.css">
+        <link rel="stylesheet" href="../static/contato.css">
+    </head>
+
+    <body>
+        <header style="padding-top: 40px;">    
+            <a href="{{ url_for('homepage') }}"><img id="botaohome" src="../static/fotos/botao-home-png.png">
+            <h2 class="home">| Veggood</h2></a>
+        </header>
+
+        <main>
+            <form>
+                <div>
+                    <label for="nomesobrenome">Nome e Sobrenome</label>
+                    <input type="text" id="nomesobrenome" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" required placeholder="(__) _____-____">
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea cols="50" rows="10" id="mensagem" required></textarea>
+                </div>
+                
+                <fieldset>
+                    <legend>Melhor forma de contato</legend>
+                    <select>
+                        <option>E-mail</option>
+                        <option>Telefone</option>
+                        <option>WhatsApp</option>
+                    </select>
+                </fieldset>
+
+                <label><input  class="checkbox" type="checkbox" checked>Gostaria de receber as novidades por e-mail?</label>
+                
+                
+                <input id="botaoenviar" type="submit" value="Enviar formulário">
+
+            </form>
+        </main>
+
+        <footer>
+            <div>
+                <ul class="sumario">
+                    <p class="pagSumario">Veggood</p>
+                    <li><strong><a href="{{ url_for('homepage') }}">Home</a></strong></li>
+                    <li><strong>Contato</strong></li>
+                    <li><strong>Política de privacidade</strong></li>
+                    <li><strong><a href="quemsomos.html">Quem somos</a></strong></li>
+                </ul>
+                <ul class="sumario">
+                    <p class="pagSumario">Social</p>
+                    
+                    <a href="https://www.facebook.com/somoseSales/"><img id="logoFinal" src="../static/fotos/facebook_logo.png"></a>
+                    <a href="https://www.instagram.com/somosesales/"><img id="logoFinal" src="../static/fotos/insta_logo.png"></a>
+                    <img id="logoFinal" src="../static/fotos/twitter_logo.png">
+                    <a href="https://www.linkedin.com/company/somosesales/mycompany/"><img id="logoFinal" src="../static/fotos/linkedin.png"></a>
+                </ul>
+
+            </div>
+
+            <div>
+                <ul>
+                    <p class="pagSumario">Formas de pagamento</p>
+                    <img id="logoFinal" src="../static/fotos/mastercard.png">
+                    <img id="logoFinal" src="../static/fotos/alelo-logo.png">
+                    <img id="logoFinal" src="../static/fotos/visa_logo.png">
+                    <img id="logoFinal" src="../static/fotos/ticket-logo.png">
+                    
+                </ul>
+            </div>
+            <p id="copyright">&copy Copyright eSales 2022</p>
+        </footer>
+    </body>
+</html>

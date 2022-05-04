@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Veggood | Pesquisa</title>
+        
+        <link rel="stylesheet" href="../static/reset.css">
+        <link rel="stylesheet" href="../static/home.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+    </head>
+
+
+    <body>
+        <header style="padding-top: 40px;">    
+            <a href="{{ url_for('homepage') }}">
+                <!-- <img id="botaohome" src="../static/fotos/botao-home-png.png"> -->
+                <h2 class="home">Veggood</h2>
+            </a>
+
+            <div class="barraDePesquisa">
+                <form action="/resultadobusca" method="post">
+                    <label><input type="search" id="barradepesquisa" name="pesquisa" placeholder=" 🔍 O que te dá fome?"></label>
+                </form>
+
+                <fieldset>
+                    <select>
+                        <option>Menor preço</option>
+                        <option>Maior preço</option>
+                        <option>Mais vendidos</option>
+                    </select>
+                </fieldset>
+            </div>
+            
+            <div class="caixa">
+                <a href="{{ url_for('link') }}">
+                <h1>{{ url }}</h1>
+                </a>
+                <p><h1>{{ data }}</h1></p>
+            </div>
+                
+        </header>
+        
+        <main>
+            <!-- RESULTADO PESQUISA -->
+        </main>
+        
+        <footer>
+            <div>
+                <ul class="sumario">
+                    <p class="pagSumario">Veggood</p>
+                    <li><strong><a href="{{ url_for('homepage') }}">Home</a></strong></li>
+                    <li><strong><a href="contato.html">Contato</a></strong></li>
+                    <li><strong>Política de privacidade</strong></li>
+                    <li><strong><a href="{{ url_for('quemsomos') }}>Quem somos</a></strong></li>
+                </ul>
+                <ul class="sumario">
+                    <p class="pagSumario">Social</p>
+                    
+                    <a href="https://www.facebook.com/somoseSales/"><img id="logoFinal" src="../static/fotos/facebook_logo.png"></a>
+                    <a href="https://www.instagram.com/somosesales/"><img id="logoFinal" src="../static/fotos/insta_logo.png"></a>
+                    <img id="logoFinal" src="../static/fotos/twitter_logo.png">
+                    <a href="https://www.linkedin.com/company/somosesales/mycompany/"><img id="logoFinal" src="../static/fotos/linkedin.png"></a>
+                </ul>
+
+            </div>
+
+            <div>
+                <ul>
+                    <p class="pagSumario">Formas de pagamento</p>
+                    <img id="logoFinal" src="../static/fotos/mastercard.png">
+                    <img id="logoFinal" src="../static/fotos/alelo-logo.png">
+                    <img id="logoFinal" src="../static/fotos/visa_logo.png">
+                    <img id="logoFinal" src="../static/fotos/ticket-logo.png">
+                    
+                </ul>
+            </div>
+            <p id="copyright">&copy Copyright eSales 2022</p>
+        </footer>
+    </body>
+</html>

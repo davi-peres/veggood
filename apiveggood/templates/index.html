@@ -7,14 +7,33 @@
         
         <link rel="stylesheet" href="../static/reset.css">
         <link rel="stylesheet" href="../static/home.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
     </head>
 
 
     <body>
         <header style="padding-top: 40px;">    
-            <a href="{{ url_for('homepage') }}"><img id="botaohome" src="../static/fotos/botao-home-png.png">
-            <h2 class="home">| Veggood</h2></a>
+            <a href="{{ url_for('homepage') }}">
+                <!-- <img id="botaohome" src="../static/fotos/botao-home-png.png"> -->
+                <h2 class="home">Veggood</h2>
+            </a>
 
+            <div class="barraDePesquisa">
+                <form action="/resultadobusca" method="post">
+                    <label><input type="search" id="barradepesquisa" name="pesquisa" placeholder=" 🔍 O que te dá fome?"></label>
+                </form>
+
+                <fieldset>
+                    <select>
+                        <option>Menor preço</option>
+                        <option>Maior preço</option>
+                        <option>Mais vendidos</option>
+                    </select>
+                </fieldset>
+            </div>
+            
             <div class="caixa">
                 <nav>
                     <ul>
@@ -34,13 +53,14 @@
                     <img class="menu" src= "../static/comidas/polenta-frita-para-espetinhos.jpg">
                     <h2 class="tituloComida">Polenta Frita</h2>
                     <p class="bordaItem-descricao">6 unidades</p>
-                    <p class="preco">11,99</p>
+                    <p class="preco">R$ 8,99</p>
                 </li>
+
                 <li>
                     <img class="menu" src="../static/comidas/brownie.jpg">
                     <h2 class="tituloComida">Brownie Vegano</h2>
                     <p class="bordaItem-descricao">Chocolate ao leite com gotas de cacau</p>
-                    <p class="preco">9,90</p>
+                    <p class="preco">R$ 9,90</p>
                 </li>
 
                 <li>
@@ -48,8 +68,51 @@
                     <h2 class="tituloComida">Hamburguer</h2>
                     <p class="bordaItem-descricao">Pão de hamburguer, queijo vegano, 
                         hamburguer de lentilha e soja, cebola caramelizada e presunto vegano</p>
-                    <p class="preco">25,90</p>
-                </li> 
+                    <p class="preco">R$ 25,90</p>
+                </li>
+
+                <li>
+                    <img class="menu" src="../static/comidas/strogonoff-vegano.jpg">
+                    <h2 class="tituloComida">Strogonoff Vegano</h2>
+                    <p class="bordaItem-descricao">Castanha de caju, grão de bico, cogumelos, 
+                        cebola, alho, sal, azeite de oliva e arroz</p>
+                    <p class="preco">R$ 25,90</p>
+                </li>
+
+                <!-- Segunda linha*************************** -->
+
+                <li>
+                    <img class="menu" src= "../static/comidas/risoto-vegetariano.jpg">
+                    <h2 class="tituloComida">Risoto Veggie - 6 Porções</h2>
+                    <p class="bordaItem-descricao">Arroz integral, vagem, cenoura, ervilha, brócolis e couve-flor, 
+                        champignon inteiros, azeitonas verdes, pimentas, azeite, sal, orégano, tomilho, 
+                        manjericão roxo e cheiro-verde. 
+                    </p>
+                    <p class="preco">R$ 120,00</p>
+                </li>
+
+                <li>
+                    <img class="menu" src="../static/comidas//sorbet-de-manga-com-gengibre.jpg">
+                    <h2 class="tituloComida">Sorbet de Manga com gengibre</h2>
+                    <p class="bordaItem-descricao">Manga, água, açúcar demerara, sumo de limão, gengibre</p>
+                    <p class="preco">R$ 15,00</p>
+                </li>
+
+                <li>
+                    <img class="menu" src="../static/comidas/flan-de-chocolate.jpg">
+                    <h2 class="tituloComida">Flan de Chocolate - 600g</h2>
+                    <p class="bordaItem-descricao">Leite de aveia, açúcar mascavo peneirado, liquor de cacau picado, 
+                        fécula de batata, ágar-ágar, extrato de baunilha.</p>
+                    <p class="preco">R$ 17,00</p>
+                </li>
+                
+                <li>
+                    <img class="menu" src="../static/comidas/mousse-de-jabuticaba.jpg">
+                    <h2 class="tituloComida">Mousse de Jabuticaba</h2>
+                    <p class="bordaItem-descricao">Jabuticaba, leite de coco, amido de milho
+                        , açúcar cristal</p>
+                    <p class="preco">R$ 25,90</p>
+                </li>
             </ul>
             
         </main>
@@ -59,9 +122,9 @@
                 <ul class="sumario">
                     <p class="pagSumario">Veggood</p>
                     <li><strong><a href="{{ url_for('homepage') }}">Home</a></strong></li>
-                    <li><strong>Contato</strong></li>
+                    <li><strong><a href="contato.html">Contato</a></strong></li>
                     <li><strong>Política de privacidade</strong></li>
-                    <li><strong><a href="{{ url_for('quemsomos') }}">Quem somos</a></strong></li>
+                    <li><strong><a href="{{ url_for('quemsomos') }}>Quem somos</a></strong></li>
                 </ul>
                 <ul class="sumario">
                     <p class="pagSumario">Social</p>
