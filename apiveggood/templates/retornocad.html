@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Veggood | Cadastro</title>
+        <link rel="stylesheet" href="../static/reset.css">
+        <link rel="stylesheet" href="../static/style.css">
+    </head>
+
+    <body>
+        <header style="padding-top: 40px;">
+            <a href="{{ url_for('homepage') }}"><img id="botaohome" src="../static/fotos/botao-home-png.png">
+            <h2 class="home">| Veggood</h2></a>
+        </header>
+        <div>
+            <img id="banner" src="../static/fotos/banner.jpg">
+            <div><h1>Usuário Cadastrado com sucesso</h1>
+            <div class="paragrafo"><a href="{{ url_for('homepage') }}">Voltar a página inicial</a>
+                <p> .</p>
+                <p> .</p>
+                <p> .</p>
+                <p> .</p>
+            </div>
+        </div>
+        <footer>
+            <div>
+                <ul class="sumario">
+                    <p class="pagSumario">Veggood</p>
+                    <li><strong><a href="{{ url_for('homepage') }}">Home</a></strong></li>
+                    <li><strong>Contato</strong></li>
+                    <li><strong>Política de privacidade</strong></li>
+                    <li><strong><a href="{{ url_for('quemsomos') }}">Quem somos</a></strong></li>
+                </ul>
+                <ul class="sumario">
+                    <p class="pagSumario">Social</p>
+
+                    <a href="https://www.facebook.com/somoseSales/"><img id="logoFinal" src="../static/fotos/facebook_logo.png"></a>
+                    <a href="https://www.instagram.com/somosesales/"><img id="logoFinal" src="../static/fotos/insta_logo.png"></a>
+                    <img id="logoFinal" src="../static/fotos/twitter_logo.png">
+                    <a href="https://www.linkedin.com/company/somosesales/mycompany/"><img id="logoFinal" src="../static/fotos/linkedin.png"></a>
+                </ul>
+
+            </div>
+
+            <div>
+                <ul>
+                    <p class="pagSumario">Formas de pagamento</p>
+                    <img id="logoFinal" src="../static/fotos/mastercard.png">
+                    <img id="logoFinal" src="../static/fotos/alelo-logo.png">
+                    <img id="logoFinal" src="../static/fotos/visa_logo.png">
+                    <img id="logoFinal" src="../static/fotos/ticket-logo.png">
+
+                </ul>
+            </div>
+            <p id="copyright">&copy Copyright eSales 2022</p>
+        </footer>
+    </body>
+
+</html>

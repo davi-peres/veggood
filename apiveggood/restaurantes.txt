@@ -1,0 +1,15 @@
+{
+    "restaurantes":[
+
+        {"nome": "Clube Vegano", "endereco": "Rua da dependencia quimica, 1112", "avaliacao": "4", "url": "http://zombo.com"},
+        {"nome": "Veg Love", "endereco": "Rua da dor, 666", "avaliacao": "4", "url": "http://pudim.com.br"},
+        {"nome": "Alface Feliz", "endereco": "Avenida demencia, 42", "avaliacao": "5", "url": "https://findtheinvisiblecow.com/"},
+        {"nome": "Verde céu", "endereco": "Travessa quinto dos infernos, 57", "avaliacao": "3", "url": "https://thisissand.com/"},
+        {"nome": "Restaurante Veggie", "endereco": "Rua meio besta, 333", "avaliacao": "4", "url": "https://picsum.photos/"}
+
+    ]
+}
+
+
+
+
