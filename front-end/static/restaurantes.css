@@ -52,6 +52,10 @@ select, input{
     padding: 8px;
 }
 
+input{
+    padding-left: 42px;
+}
+
 #icone-pesquisa{
     position: absolute;
     margin: 12px;
@@ -60,7 +64,7 @@ select, input{
 /* ****************Menu do restaurante************ */
 .bordaItem{
     width: 1175px;
-    margin: 0 7% auto;
+    margin: 0 8% auto;
     padding: 50px 0;
 }
 
@@ -70,6 +74,7 @@ select, input{
     padding: 20px 20px 40px 20px;
     transition: 1s all;
     margin-block-end: 50px;
+    width: 1095px;
 }
 
 .bordaItem li a{

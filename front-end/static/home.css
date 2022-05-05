@@ -46,6 +46,10 @@ select, input{
     padding: 8px;
 }
 
+input{
+    padding-left: 42px;
+}
+
 
 .tituloComida{
     font-size: 18px;
