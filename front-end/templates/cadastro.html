@@ -2,22 +2,26 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <title>Veggood | Contato</title>
-    
+        <title>Cadastro | Veggood</title>
+
         <link rel="stylesheet" href="../static/reset.css">
-        <link rel="stylesheet" href="../static/contato.css">
+        <link rel="stylesheet" href="../static/cadastro.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
-   </head>
+    </head>
 
     <body>
         <header style="padding-top: 40px;">    
             <a href="index.html">
-                <h2 class="home">Veggood | Contato</h2>
+                <h2 class="home">Veggood | Cadastro</h2>
             </a>
         </header>
+        
+        <img id="banner" src="../static/fotos/banner.jpg">
+            
         <main>
+            <p>Vamos lá, é rapidinho!</p>
             <form>
                 <div>
                     <label for="nomesobrenome">Nome e Sobrenome</label>
@@ -28,26 +32,48 @@
 
                     <label for="telefone">Telefone</label>
                     <input type="tel" id="telefone" required placeholder="(__) _____-____">
-
-                    <label for="mensagem">Mensagem</label>
-                    <textarea cols="50" rows="10" id="mensagem" required></textarea>
                 </div>
-                
-                <fieldset>
-                    <legend>Melhor forma de contato</legend>
-                    <select>
-                        <option>E-mail</option>
-                        <option>Telefone</option>
-                        <option>WhatsApp</option>
-                    </select>
-                </fieldset>
+                <div class="cad-endereco">
+                    <label for="CEP">CEP
+                        <input type="text" id="CEP" maxlength="8" onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                        required placeholder="_____-___">
+                    </label>
+                    <label for="endereco">Endereço
+                        <input type="text" id="endereco" required>
+                    </label>
+                    <label>Número
+                        <input type="text" id="numero">
+                    </label>
 
-                <label><input class="checkbox" type="checkbox" checked>Gostaria de receber as novidades por e-mail?</label>
-                
-                
-                <input id="botaoenviar" type="submit" value="Enviar formulário">
+                    <fieldset>
+                        <legend>UF</legend>
+                        <select>
+                            <option>AC</option><option>AL</option><option>AM</option>
+                            <option>BA</option><option>CE</option><option>DF</option>
+                            <option>ES</option><option>GO</option><option>MA</option>
+                            <option>MT</option><option>MS</option><option>MG</option>
+                            <option>PA</option><option>PB</option><option>PR</option>
+                            <option>PE</option><option>PI</option><option>RJ</option>
+                            <option>RN</option><option>RS</option><option>RO</option>
+                            <option>RR</option><option>SC</option><option>SP</option>
+                            <option>SE</option><option>TO</option>
+                        </select>
+                    </fieldset>
 
+                    <label>Cidade
+                        <input type="text" id="cidade">
+                    </label>
+
+                    <label>Complemento
+                        <input type="text" id="complemento">
+                    </label>
+
+                </div>
+                <a href="cadastro-concluido.html">
+                    <input id="botaoenviar" type="submit" value="Prosseguir">
+                </a>
             </form>
+            
         </main>
 
         <footer>
