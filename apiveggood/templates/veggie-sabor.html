@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Veggie Sabor - Delivery apenas no Veggood</title>
+        
+        <link rel="stylesheet" href="../static/reset.css">
+        <link rel="stylesheet" href="../static/restaurantes.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header style="margin-top: 40px;">
+            <a href="{{ url_for('homepage') }}">
+                <!-- <img id="botaohome" src="../static/fotos/botao-home-png.png"> -->
+                <h2 class="home">Veggood</h2>
+            </a>
+
+            <div class="barraDePesquisa">
+                <form action="/resultadobusca" method="POST">
+                    <label>
+                        <span id="icone-pesquisa">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                        </span>
+                        <input type="search" placeholder="O que te dá fome?" name="pesquisa">
+                    </label>
+                </form>
+
+                <fieldset>
+                    <select>
+                        <option>Menor preço</option>
+                        <option>Maior preço</option>
+                        <option>Mais vendidos</option>
+                    </select>
+                </fieldset>
+            </div>
+            
+        </header>
+
+        <main>
+            <section>
+                <img id= "logo-restaurantes" src="../static/fotos/veggie-sabor.png">
+                <div>
+                    <h1 class="titulo-restaurantes"><strong>Veggie Sabor</strong></h1>
+                    <h1 class="titulo-restaurantes">Classificação : 
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+                                <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                        </span>
+                    </h1>
+                </div>
+            </section>
+
+            <section>
+                <ul class="bordaItem">
+                    <li>
+                        <img class="imagem-comida" src="../static/comidas/coxinha-vegana.jpg">
+                        <h1 class="tituloComida">Coxinha vegana crocante - 2und</h1>
+                        <p class="descricao-comida">Azeite de Oliva, cebola, alho, palmito Pupunha, sal, extrato de tomate, 
+                            cúrcuma, páprica defumada, pimenta do reino, salsinha, cebolinha, batata, 
+                            folhas de alho poró, folha de salsão, farinha de trigo, farinha panko.</p>
+                        <div class="barra-quantidade">
+                            <span class="subtrai-qtd">-</span>
+                            <span class="num">01</span>
+                            <span class="add-qtd">+</span>
+                            <script src="../static/botao_qtd.js"></script>
+                        </div>
+                        <p class="preco-comida">R$ 7,00</p>
+                    </li>
+                    <li>
+                        <img class="imagem-comida" src="../static/comidas/sanduiche-vegano-beringela.jpg">
+                        <h1 class="tituloComida">Sanduíche Vegano com Berinjela e pimentão Assado</h1>
+                        <p class="descricao-comida">pimentões amarelos, pimentão vermelho, berinjela, 
+                            azeite, sal, bife vegetal, mussarella vegana, pão Vegano.</p>
+                        <div class="barra-quantidade">
+                            <span class="subtrai-qtd">-</span>
+                            <span class="num">01</span>
+                            <span class="add-qtd">+</span>
+                            <script src="../static/botao_qtd.js"></script>
+                        </div>
+                        <p class="preco-comida">R$ 25,50</p>
+                    </li>
+                    <li>
+                        <img class="imagem-comida" src="../static/comidas/sanduiche-de-legumes-provencal.jpg">
+                        <h1 class="tituloComida">Sanduíche de Legumes à Provençal</h1>
+                        <p class="descricao-comida">pães ciabatta, abobrinha verde, abobrinha amarela, pimentão vermelho, 
+                            tomate, berinjela, alho, folhas de manjericão, azeite,sal e pimenta.</p>
+                        <div class="barra-quantidade">
+                            <span class="subtrai-qtd">-</span>
+                            <span class="num">01</span>
+                            <span class="add-qtd">+</span>
+                            <script src="../static/botao_qtd.js"></script>
+                        </div>
+                        <p class="preco-comida">R$ 28,50</p>
+                    </li>
+                    <li>
+                        <img class="imagem-comida" src="../static/comidas/macarrao-com-molho-branco.jpg">
+                        <h1 class="tituloComida">Macarrão com Molho Branco de Amêndoas e Cogumelos</h1>
+                        <p class="descricao-comida">amêndoas, shimeji fresco, shiitake fresco, cebola, alho, amido de milho, salsinha e 
+                            cebolinha,noz moscada, pimenta do reino, castanha-do-pará, sal, macarrão.</p>
+                        <div class="barra-quantidade">
+                            <span class="subtrai-qtd">-</span>
+                            <span class="num">01</span>
+                            <span class="add-qtd">+</span>
+                            <script src="../static/botao_qtd.js"></script>
+                        </div>
+                        <p class="preco-comida">R$ 42,50</p>
+                    </li>
+                    <li>
+                        <img class="imagem-comida" src="../static/comidas/pao-crocante.jpg">
+                        <h1 class="tituloComida">Pão solar</h1>
+                        <p class="descricao-comida">Massa de pão, barra de chocolate amargo sem leite, creme de leite de soja, açúcar, avelã.</p>
+                        <div class="barra-quantidade">
+                            <span class="subtrai-qtd">-</span>
+                            <span class="num">01</span>
+                            <span class="add-qtd">+</span>
+                            <script src="../static/botao_qtd.js"></script>
+                        </div>
+                        <p class="preco-comida">R$ 18,00</p>
+                    </li>
+                    <li>
+                        <img class="imagem-comida" src="../static/comidas/moqueca-de-banana.jpg">
+                        <h1 class="tituloComida">Moqueca de Banana</h1>
+                        <p class="descricao-comida">Bananas da terra, tomates, cebola,alho,molho de tomate, pimentão verde,
+                            leite de côco gengibre, salsa, cebolinha e coentro, azeite de oliva, sal e pimenta.</p>
+                        <div class="barra-quantidade">
+                            <span class="subtrai-qtd">-</span>
+                            <span class="num">01</span>
+                            <span class="add-qtd">+</span>
+                            <script src="../static/botao_qtd.js"></script>
+                        </div>
+                        <p class="preco-comida">R$ 22,00</p>
+                    </li>
+
+                    <li>
+                        <img class="imagem-comida" src="../static/comidas/nuggets-veggie.jpg">
+                        <h1 class="tituloComida">Nuggets Veggie</h1>
+                        <p class="descricao-comida">Feijão branco, milho, farinha de trigo, óleo, sal, alho, 
+                            pimenta do reino e cominho, cebola, água e farinha de rosca. Óleo vegetal para fritar.</p>
+                        <div class="barra-quantidade">
+                            <span class="subtrai-qtd">-</span>
+                            <span class="num">01</span>
+                            <span class="add-qtd">+</span>
+                            <script src="../static/botao_qtd.js"></script>
+                        </div>
+                        <p class="preco-comida">R$ 15,00</p>
+                    </li>
+                    <li>
+                        <img class="imagem-comida" src="../static/comidas/yakissoba-birum.jpg">
+                        <h1 class="tituloComida">Yakissoba de Bifum</h1>
+                        <p class="descricao-comida">Bifum, brócolis, pimentão vermelho, pimentão amarelo, 
+                            cenoura, alho e cebola, óleo, água, shoyo, amido de milho.</p>
+                        <div class="barra-quantidade">
+                            <span class="subtrai-qtd">-</span>
+                            <span class="num">01</span>
+                            <span class="add-qtd">+</span>
+                            <script src="../static/botao_qtd.js"></script>
+                        </div>
+                        <p class="preco-comida">R$ 18,99</p>
+                    </li><li>
+                        <img class="imagem-comida" src="../static/comidas/alfajor-vegano.jpg">
+                        <h1 class="tituloComida">Alfajor Vegano</h1>
+                        <p class="descricao-comida">Farinha de trigo,açúcar, óleo vegetal, cacau em pó, chá de fermento, sal, 
+                            biscoito Maria vegano, creme de leite vegetal, chocolate vegano, meio amargo.</p>
+                        <div class="barra-quantidade">
+                            <span class="subtrai-qtd">-</span>
+                            <span class="num">01</span>
+                            <span class="add-qtd">+</span>
+                            <script src="../static/botao_qtd.js"></script>
+                        </div>
+                        <p class="preco-comida">R$ 6,00</p>
+                    </li>
+                    <li>
+                        <img class="imagem-comida" src="../static/comidas/polenta-frita-para-espetinhos.jpg">
+                        <h1 class="tituloComida">Polenta Frita</h1>
+                        <p class="descricao-comida">6 unidades</p>
+                        <div class="barra-quantidade">
+                            <span class="subtrai-qtd">-</span>
+                            <span class="num">01</span>
+                            <span class="add-qtd">+</span>
+                            <script src="../static/botao_qtd.js"></script>
+                        </div>
+                        <p class="preco-comida">R$ 8,99</p>
+                    </li>
+                </ul>
+            </section>
+            
+        </main>
+
+        <footer>
+            <div>
+                <ul class="sumario">
+                    <p class="pagSumario">Veggood</p>
+                    <li><strong><a href="{{ url_for('homepage') }}">Home</a></strong></li>
+                    <li><strong><a href="{{ url_for('contato') }}">Contato</a></strong></li>
+                    <li><strong>Política de privacidade</strong></li>
+                    <li><strong><a href="{{ url_for('quemsomos') }}">Quem somos</a></strong></li>
+                </ul>
+                <ul class="sumario">
+                    <p class="pagSumario">Social</p>
+                    
+                    <a href="https://www.facebook.com/somoseSales/"><img id="logoFinal" src="../static/fotos/facebook_logo.png"></a>
+                    <a href="https://www.instagram.com/somosesales/"><img id="logoFinal" src="../static/fotos/insta_logo.png"></a>
+                    <img id="logoFinal" src="../static/fotos/twitter_logo.png">
+                    <a href="https://www.linkedin.com/company/somosesales/mycompany/"><img id="logoFinal" src="../static/fotos/linkedin.png"></a>
+                </ul>
+
+            </div>
+
+            <div>
+                <ul>
+                    <p class="pagSumario">Formas de pagamento</p>
+                    <img id="logoFinal" src="../static/fotos/mastercard.png">
+                    <img id="logoFinal" src="../static/fotos/alelo-logo.png">
+                    <img id="logoFinal" src="../static/fotos/visa_logo.png">
+                    <img id="logoFinal" src="../static/fotos/ticket-logo.png">
+                    
+                </ul>
+            </div>
+            <p id="copyright">&copy Copyright eSales 2022</p>
+        </footer>
+    </body>
+    
+</html>

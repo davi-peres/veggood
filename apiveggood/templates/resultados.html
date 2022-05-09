@@ -16,7 +16,6 @@
     <body>
         <header style="padding-top: 40px;">    
             <a href="{{ url_for('homepage') }}">
-                <!-- <img id="botaohome" src="../static/fotos/botao-home-png.png"> -->
                 <h2 class="home">Veggood</h2>
             </a>
 
@@ -35,16 +34,17 @@
             </div>
             
             <div class="caixa">
+                <h1>Resultado da busca por: {{data}}</h1>
+                <br><br>
                 <a href="{{ url_for('link') }}">
-                <h1>{{ url }}</h1>
+                <h1>{{data}}</h1>
                 </a>
-                <p><h1>{{ data }}</h1></p>
             </div>
                 
         </header>
         
         <main>
-            <!-- RESULTADO PESQUISA -->
+
         </main>
         
         <footer>
@@ -52,9 +52,9 @@
                 <ul class="sumario">
                     <p class="pagSumario">Veggood</p>
                     <li><strong><a href="{{ url_for('homepage') }}">Home</a></strong></li>
-                    <li><strong><a href="contato.html">Contato</a></strong></li>
+                    <li><strong><a href="{{ url_for('contato') }}">Contato</a></strong></li>
                     <li><strong>Política de privacidade</strong></li>
-                    <li><strong><a href="{{ url_for('quemsomos') }}>Quem somos</a></strong></li>
+                <li><strong><a href="{{ url_for('quemsomos') }}">Quem somos</a></strong></li>
                 </ul>
                 <ul class="sumario">
                     <p class="pagSumario">Social</p>

@@ -3,6 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <title>Veggood | Contato</title>
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        {{ message }}
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
     
         <link rel="stylesheet" href="../static/reset.css">
         <link rel="stylesheet" href="../static/contato.css">
@@ -10,24 +17,24 @@
 
     <body>
         <header style="padding-top: 40px;">    
-            <a href="{{ url_for('homepage') }}"><img id="botaohome" src="../static/fotos/botao-home-png.png">
+            <a href="{{ url_for('homepage') }}">
             <h2 class="home">| Veggood</h2></a>
         </header>
 
         <main>
-            <form>
+            <form action="/msgenviada" method="post">
                 <div>
                     <label for="nomesobrenome">Nome e Sobrenome</label>
-                    <input type="text" id="nomesobrenome" required>
+                    <input type="text" id="nomesobrenome" required name="nomesobrenome">
 
                     <label for="email">Email</label>
-                    <input type="email" id="email" required>
+                    <input type="email" id="email" required name="email">
 
                     <label for="telefone">Telefone</label>
-                    <input type="tel" id="telefone" required placeholder="(__) _____-____">
+                    <input type="tel" id="telefone" maxlength="11" required placeholder="(__) _____-____" name="telefone">
 
                     <label for="mensagem">Mensagem</label>
-                    <textarea cols="50" rows="10" id="mensagem" required></textarea>
+                    <textarea cols="50" rows="10" id="mensagem" required name="mensagem"></textarea>
                 </div>
                 
                 <fieldset>
@@ -52,9 +59,9 @@
                 <ul class="sumario">
                     <p class="pagSumario">Veggood</p>
                     <li><strong><a href="{{ url_for('homepage') }}">Home</a></strong></li>
-                    <li><strong>Contato</strong></li>
+                    <li><strong><a href="{{ url_for('contato') }}">Contato</a></strong></li>
                     <li><strong>Política de privacidade</strong></li>
-                    <li><strong><a href="quemsomos.html">Quem somos</a></strong></li>
+                    <li><strong><a href="{{ url_for('quemsomos') }}">Quem somos</a></strong></li>
                 </ul>
                 <ul class="sumario">
                     <p class="pagSumario">Social</p>

@@ -10,7 +10,7 @@
 
     <body>
         <header style="padding-top: 40px;">
-            <a href="{{ url_for('homepage') }}"><img id="botaohome" src="../static/fotos/botao-home-png.png">
+            <a href="{{ url_for('homepage') }}">
             <h2 class="home">| Veggood</h2></a>
         </header>
         <div>
@@ -28,7 +28,7 @@
                 <ul class="sumario">
                     <p class="pagSumario">Veggood</p>
                     <li><strong><a href="{{ url_for('homepage') }}">Home</a></strong></li>
-                    <li><strong>Contato</strong></li>
+                    <li><strong><a href="{{ url_for('contato') }}">Contato</strong></li>
                     <li><strong>Política de privacidade</strong></li>
                     <li><strong><a href="{{ url_for('quemsomos') }}">Quem somos</a></strong></li>
                 </ul>

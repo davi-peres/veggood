@@ -1,9 +1,3 @@
-.caixa{
-    position: relative;
-    width: 940px;
-    margin: 0 20% auto;
-}
-
 .home{   
     margin: 20px 0 5px 125px;
     display: inline-block;
@@ -16,34 +10,21 @@
     padding-bottom: 50px;
 }
 
-.user{
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    padding: 15px;
+#logo-restaurantes{
+    width: 1145px;
+    height: 365px;
+    margin: 10px 92px 20px 110px;
 }
 
-#cadastro{
-    margin-left: 912px;
-    vertical-align: text-bottom;
+.titulo-restaurantes{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    display: inline-block;
+    vertical-align: top;
 }
 
-#cadastro input{
-    width: 80px;
-    height: 80px;
-    text-align: center;
-    padding: 0;
-    background-color: #A0AA60;
-    border-radius: 50px;
-}
-
-#cadastro input:hover{
-    cursor: pointer;
-}
-
-#icone-pesquisa{
-    position: absolute;
-    margin: 12px;
+.titulo-restaurantes strong{
+    margin: 15px 718px 30px 110px;
 }
 
 .barraDePesquisa{
@@ -75,43 +56,25 @@ input{
     padding-left: 42px;
 }
 
-
-.tituloComida{
-    font-size: 18px;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 12px 0 30px;
-    max-height: 18px;
+#icone-pesquisa{
+    position: absolute;
+    margin: 12px;
 }
 
-.preco{
-    font-size: 18px;
-    color: #BFBF5E;
-    font-weight: bold;
-    margin-block: 18px auto;
-    text-align: left;
-    font-family: arial;
-}
-
+/* ****************Menu do restaurante************ */
 .bordaItem{
     width: 1175px;
-    margin: 0 7% auto;
+    margin: 0 8% auto;
     padding: 50px 0;
 }
 
-.bordaItem li{
-    display: inline-block;
-    position: relative;
-    width: 255px;
-    height: 370px;
-    margin: 45px 1.5%;
-    border: inset;
-    padding: 20px;
-    box-sizing: border-box;
-    max-inline-size: 285px;
-    vertical-align: top;
-    border-radius: 20px;
+.bordaItem li {
+    border: solid 5px;
+    border-radius: 16px;
+    padding: 20px 20px 40px 20px;
     transition: 1s all;
-    box-shadow: 15px 15px 15px #d56b1d;
+    margin-block-end: 50px;
+    width: 1095px;
 }
 
 .bordaItem li a{
@@ -120,42 +83,76 @@ input{
 }
 
 .bordaItem li:hover{
-    border: 2px solid;
+    border: 5px solid;
     cursor: pointer;
     transform: scale(1.05);
 }
 
-.bordaItem-descricao{
+/* 
+.bordaItem h1, .bordaItem p{
+    margin-left: 10px;
+} */
+
+.imagem-comida{
+    width: 100%;
+    height: 210px;
+    max-width: 300px;
+    float: left;
+    margin-right: 30px;
+}
+.tituloComida{
+    font-size: 25px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0 0 30px;
+    font-weight: 600;
+}
+
+.descricao-comida{
     box-sizing: border-box;
     height: 95px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14.5px;
-    line-height: 17px;
+    font-size: 16.5px;
 }
-
-.menu{
-    width: 100%;
-    height: 130px;
-    max-width: 210px;
-}
-
-nav li{
+.preco-comida{
+    font-size: 22px;
+    color: #BFBF5E;
+    font-weight: bold;
+    margin-block: 18px auto;
+    text-align: left;
+    font-family: arial;
     display: inline;
-    font-size: 20px;
-    padding-inline: 60px;
-    font-family: sans-serif;
-    border-inline-end: 2px solid;
+    margin-left: 30px;
+}
+
+.barra-quantidade{
+    font-family: 'Poppins', sans-serif;
+    min-width: 120px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.425);
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.barra-quantidade span{
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
     cursor: pointer;
 }
 
+.barra-quantidade span.num{
+    font-size: 22px;
+    border-right: 2px solid rgba(0, 0, 0, 0, 0.2);
+    border-left: 2px solid rgba(0, 0, 0, 0, 0.2);
+    pointer-events: none;
+}
 
 
-
-/* .bloco{
-    background-color: limegreen;
-    border-block-start: 5px solid;
-    padding: 30px;
-} */
+/* *********Rodapé do site********** */
 
 .pagSumario{
     color: #58692E;
@@ -187,7 +184,7 @@ nav li{
 strong{
     font-weight: bold;
 }
-.sumario li a{
+li a{
     color: #A0AA60;
     text-decoration: none;
 }
@@ -218,16 +215,4 @@ footer div{
     color: #58692E;
     font-weight: 600;
 
-}
-
-@media screen and (max-width: 480px) {
-    .bordaItem, select, input{
-        width: auto;
-    }
-
-    .home, .bordaItem, select, input{
-        text-align: center;
-        margin: 0;
-        display: block;
-    }
 }

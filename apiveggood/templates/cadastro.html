@@ -1,32 +1,112 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cadastro de usuário</title>
-</head>
-<body>
-    <div class="container">
-      <div class="page-header">
-          <h1>{{ titulo }}</h1>
-      </div>
-      <form action="/usarionovo" method="post">
-        <fieldset>
-          <div class="form-group">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" class="form-control">
-          </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email" class="form-control">
-          </div>
-          <div class="form-group">
-            <label for="senha">Senha:</label>
-            <input type="text" id="senha" name="senha" class="form-control">
-          </div>
-          <button type="submit" class="btn btn-primary btn-salvar">Salvar</button>
-        </fieldset>
-      </form>
-    </div>
-</body>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cadastro | Veggood</title>
+
+        <link rel="stylesheet" href="../static/reset.css">
+        <link rel="stylesheet" href="../static/cadastro.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header style="padding-top: 40px;">    
+            <a href="{{ url_for('homepage') }}">
+                <h2 class="home">Veggood | Cadastro</h2>
+            </a>
+        </header>
+        
+        <img id="banner" src="../static/fotos/banner.jpg">
+            
+        <main>
+            <p>Vamos lá, é rapidinho!</p>
+            <form action="/usarionovo" method="post">
+                <div>
+                    <label for="nomesobrenome">Nome e Sobrenome</label>
+                    <input type="text" id="nomesobrenome" required name="nomesobrenome">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required name="email">
+
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" maxlength="11" required placeholder="(__) _____-____" name="telefone">
+                </div>
+                <div class="cad-endereco">
+                    <label for="CEP">CEP
+                        <input type="text" id="CEP" maxlength="8" onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                        required placeholder="_____-___" name="cep">
+                    </label>
+                    <label for="endereco">Endereço
+                        <input type="text" id="endereco" required name="endereco">
+                    </label>
+                    <label>Número
+                        <input type="text" id="numero" name="numero">
+                    </label>
+
+                    <fieldset>
+                        <legend>UF</legend>
+                        <select>
+                            <option>AC</option><option>AL</option><option>AM</option>
+                            <option>BA</option><option>CE</option><option>DF</option>
+                            <option>ES</option><option>GO</option><option>MA</option>
+                            <option>MT</option><option>MS</option><option>MG</option>
+                            <option>PA</option><option>PB</option><option>PR</option>
+                            <option>PE</option><option>PI</option><option>RJ</option>
+                            <option>RN</option><option>RS</option><option>RO</option>
+                            <option>RR</option><option>SC</option><option>SP</option>
+                            <option>SE</option><option>TO</option>
+                        </select>
+                    </fieldset>
+
+                    <label>Cidade
+                        <input type="text" id="cidade" name="cidade">
+                    </label>
+
+                    <label>Complemento
+                        <input type="text" id="complemento" name="complemento">
+                    </label>
+
+                </div>
+                <a href="{{ url_for('retornarcad') }}">
+                    <input id="botaoenviar" type="submit" value="Prosseguir">
+                </a>
+            </form>
+            
+        </main>
+
+        <footer>
+            <div>
+                <ul class="sumario">
+                    <p class="pagSumario">Veggood</p>
+                    <li><strong><a href="{{ url_for('homepage') }}">Home</a></strong></li>
+                    <li><strong><a href="{{ url_for('contato') }}">Contato</a></strong></li>
+                    <li><strong>Política de privacidade</strong></li>
+                    <li><strong><a href="{{ url_for('quemsomos') }}">Quem somos</a></strong></li>
+                </ul>
+                <ul class="sumario">
+                    <p class="pagSumario">Social</p>
+                    
+                    <a href="https://www.facebook.com/somoseSales/"><img id="logoFinal" src="../static/fotos/facebook_logo.png"></a>
+                    <a href="https://www.instagram.com/somosesales/"><img id="logoFinal" src="../static/fotos/insta_logo.png"></a>
+                    <img id="logoFinal" src="../static/fotos/twitter_logo.png">
+                    <a href="https://www.linkedin.com/company/somosesales/mycompany/"><img id="logoFinal" src="../static/fotos/linkedin.png"></a>
+                </ul>
+
+            </div>
+
+            <div>
+                <ul>
+                    <p class="pagSumario">Formas de pagamento</p>
+                    <img id="logoFinal" src="../static/fotos/mastercard.png">
+                    <img id="logoFinal" src="../static/fotos/alelo-logo.png">
+                    <img id="logoFinal" src="../static/fotos/visa_logo.png">
+                    <img id="logoFinal" src="../static/fotos/ticket-logo.png">
+                    
+                </ul>
+            </div>
+            <p id="copyright">&copy Copyright eSales 2022</p>
+        </footer>
+    </body>
 </html>
