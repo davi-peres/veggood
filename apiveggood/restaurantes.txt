@@ -1,11 +1,23 @@
 {
     "restaurantes":[
 
-        {"nome": "Clube Vegano", "endereco": "Rua da dependencia quimica, 1112", "avaliacao": "4", "url": "http://zombo.com"},
-        {"nome": "Veg Love", "endereco": "Rua da dor, 666", "avaliacao": "4", "url": "http://pudim.com.br"},
-        {"nome": "Alface Feliz", "endereco": "Avenida demencia, 42", "avaliacao": "5", "url": "https://findtheinvisiblecow.com/"},
-        {"nome": "Verde céu", "endereco": "Travessa quinto dos infernos, 57", "avaliacao": "3", "url": "https://thisissand.com/"},
-        {"nome": "Restaurante Veggie", "endereco": "Rua meio besta, 333", "avaliacao": "4", "url": "https://picsum.photos/"}
+        {"nome": "Clube Vegano", "endereco": "Rua independencia, 1112, São Leopoldo",
+        "produtos": "couve flor, flan de chocolate, strogonoff vegano, risoto veggie, sorbet de manga com gengibre,
+        mousse de jabuticaba",
+        "url": "http://127.0.0.1:5000/clubevegano"},
+
+        {"nome": "Vida Vegana", "endereco": "Rua Cap. Camboim, 5885, Sapucaia do Sul",
+        "produtos": "churrasco vegano, pizza vegana, sanduiche integral com abacate e tomates, Salada agridoce,
+        Panqueca vegana, Sopa de Lentilhas com Cenoura, Risoto de Trigo Sarraceno com Cogumelos e Couve-de-Bruxelas,
+        Smoothie de banana, Brigadeiro de avocado, suco energizante",
+        "url": "http://127.0.0.1:5000/vidavegana"},
+
+        {"nome": "Veggie Sabor", "endereco": "Av. Joao Wallig, 110, Porto Alegre",
+        "produtos": "Coxinha vegana crocante, Sanduíche Vegano com Berinjela e pimentão Assado, Sanduíche de Legumes à Provençal,
+        Macarrão com Molho Branco de Amêndoas e Cogumelos, Pão solar, Moqueca de Banana, Nuggets veggie, Yakissoba de bifum,
+        Alfajor Vegano, polenta frita",
+        "url": "http://127.0.0.1:5000/veggiesabor"}
+
 
     ]
 }
